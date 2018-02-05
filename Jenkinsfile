@@ -1,5 +1,10 @@
 pipeline {
-  agent none
+  agent {
+    node {
+      label 'some-label'
+    }
+    
+  }
   stages {
     stage('Build') {
       parallel {
