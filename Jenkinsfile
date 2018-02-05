@@ -10,12 +10,12 @@ pipeline {
       parallel {
         stage('Build') {
           steps {
-            sh 'sudo docker build --tag="ubiworx-test-replay" .'
+            sh 'echo "hello"'
           }
         }
         stage('Run') {
           steps {
-            sh 'sudo docker run -d ubiworx-test-replay'
+            sh 'date'
           }
         }
       }
