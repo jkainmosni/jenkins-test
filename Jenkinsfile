@@ -13,6 +13,11 @@ pipeline {
             sh 'date'
           }
         }
+        stage('this job wont work') {
+          steps {
+            sh 'zsexrdctfvgbhnjmk'
+          }
+        }
       }
     }
   }
